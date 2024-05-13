@@ -18,12 +18,10 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development environment running.
-
-Say what the step will be:
+프로젝트를 실행하기 전에 필요한 환경 설정을 설치합니다. 
 
 ```
-Give the example
+pip install -r requirements.txt
 ```
 
 And repeat:
@@ -34,6 +32,22 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo.
 
+## Preprocessing
+
+MIDI 파일을 사용하여 음악을 생성하기 위해 데이터를 전처리해야 합니다. 
+
+MIDI 파일 경로와 전처리된 데이터를 저장할 파일 경로를 지정해야 합니다.
+
+```
+python preprocess.py --input_file input.mid --output_file output.pkl --seq_length 100
+```
+여기서,
+- input.mid: 전처리할 MIDI 파일의 경로입니다.
+- output.pkl: 전처리된 데이터를 저장할 파일의 경로입니다.
+- seq_length: 전처리할 시퀀스 길이입니다. 기본값은 100입니다.
+전처리된 데이터는 pickle 형식으로 저장됩니다.
+
+
 ## Running the Tests
 
 Explain how to run the automated tests for this system.
@@ -43,7 +57,7 @@ Explain how to run the automated tests for this system.
 Explain what these tests test and why.
 
 ```
-Give an example
+
 ```
 
 ### And coding style tests
