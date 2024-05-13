@@ -45,6 +45,7 @@ python preprocess.py --input_file input.mid --output_file output.pkl --seq_lengt
 - input.mid: 전처리할 MIDI 파일의 경로입니다.
 - output.pkl: 전처리된 데이터를 저장할 파일의 경로입니다.
 - seq_length: 전처리할 시퀀스 길이입니다. 기본값은 100입니다.
+
 전처리된 데이터는 pickle 형식으로 저장됩니다.
 
 
